@@ -16,3 +16,20 @@ Display report for all universities that have a total price for in-state student
 
 
 """
+import json
+
+infile = open("school_data.json",'r')
+
+schools = json.load(infile)
+
+print(type(schools))
+
+conference_schools = [372,108,107,130]
+
+for school in schools:
+    school_name = school['instnm']
+    ncaa = school['NCAA']["NAIA conference number football (IC2020)"]
+    if ncaa in conference_schools:
+        grad_w = school["Graduation rate  women (DRVGR2020)"]
+        if grad_w > 50:
+            print(grad_w)
