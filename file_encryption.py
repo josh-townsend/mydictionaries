@@ -23,3 +23,5 @@ for line in lines:
 encrypted_text = '\n'.join(encrypted_lines)
 outfile = open('encrypted.txt' , 'w')
 outfile.write(encrypted_text)
+
+outfile.close()
