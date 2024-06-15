@@ -94,7 +94,7 @@ print('*****  end section 4 ********')
 print()
 
 
-
+'''
 
 
 
@@ -121,7 +121,7 @@ print('*****  end section 5 ********')
 print()
 
 
-
+'''''
 
 
 print()
@@ -176,7 +176,7 @@ print()
 print('*****  end section 8 ********')
 print()
 
-'''''
+
 
 print()
 print('*****  start section 9 - using random and converting to list ********')
@@ -196,7 +196,7 @@ print('*****  end section 9 ********')
 print()
 
 
-
+'''
 
 
 

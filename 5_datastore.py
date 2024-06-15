@@ -58,7 +58,9 @@ for dictionary in datastore["medical"]:
     #sqft = str(dictionary["sq-ft"])
     #price = str(dictionary["price"])
     
-    outfile.write(str(dictionary["room-number"]) + ',' +dictionary["use"]+ ',' + str(dictionary["sq-ft"]) + ',' + str(dictionary["price"]) + ',' + '\n')
+
+    print(str(dictionary["room-number"]) + ',' +dictionary["use"]+ ',' + str(dictionary["sq-ft"]) + ',' + str(dictionary["price"]) + ',' + '\n')
+   #outfile.write(str(dictionary["room-number"]) + ',' +dictionary["use"]+ ',' + str(dictionary["sq-ft"]) + ',' + str(dictionary["price"]) + ',' + '\n')
 
 outfile.close()
 

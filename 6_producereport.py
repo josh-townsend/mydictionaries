@@ -207,3 +207,13 @@ ProduceDictionary={
     }
 }
 
+for produce in ProduceDictionary:
+    produce_details = ProduceDictionary[produce]
+    cost = produce_details['cost']
+    amount_sold = produce_details['amt_sold']
+    stotal = produce_details['total']
+    ctotal = round(cost * amount_sold, 2)
+
+    if ctotal != stotal:
+        off_amount = ctotal-stotal
+        print(f"{produce} was calculated incorrectly. The stated total was {stotal} but the actual total is {ctotal}. It is ${off_amount:.2f} off.")
